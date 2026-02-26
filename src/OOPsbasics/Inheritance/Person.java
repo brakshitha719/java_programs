@@ -1,0 +1,25 @@
+package OOPsbasics.Inheritance;
+
+public class Person {
+     String Fname;
+     String Lname;
+
+    Person(String Fname, String Lname) {
+        this.Fname = Fname;
+        this.Lname = Lname;
+    }
+
+}
+
+    class Student extends Person {
+        int usn;
+        Student(String Fname, String Lname, int usn){
+            super(Fname,Lname);
+            this.usn=usn;
+    }
+}
+class Driver3{
+    static void main() {
+        Student s1 = new Student("Shrusti","Rampure",102);
+    }
+}
